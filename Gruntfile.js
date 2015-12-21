@@ -39,6 +39,12 @@ module.exports = function (grunt) {
                         cwd:'less/',
                         src: ['font-awesome/**/*', 'bootstrap/**/*'],
                         dest: 'bower_components/'
+                    },
+                    {
+                        expand: true,
+                        cwd:'less/',
+                        src: ['extra-theme.less'],
+                        dest: 'bower_components/bootstrap/less/'
                     }
                 ]
             },
@@ -167,6 +173,9 @@ module.exports = function (grunt) {
             });
 
             result.forEach(function (item, index) {
+                if(index < 1){
+                    fs.appendFileSync(targetFile, "@provide 'variables';\n");
+                }
                 if(item.indexOf("/**") < 0){
                     var nbSpace = maxLength - item.split(":")[0].length;
                     var space = [" "];
@@ -217,7 +226,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('dist', ['copy:work', 'compile-bootstrap', 'compile-fa']);
 
-    grunt.registerTask('default', ['bower-reset', 'clean:dist', 'dist']);
+    grunt.registerTask('default', ['bower-reset', 'clean:dist', 'dist', 'gss']);
 
 
 };
