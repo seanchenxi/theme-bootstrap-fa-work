@@ -1,0 +1,890 @@
+@import "bootstrap/less/variables.less";
+#GSS{
+/** file used to overriding original bootstrap variables.less file **/
+
+/** **/
+/** Variables **/
+/** -------------------------------------------------- **/
+
+
+/** Colors **/
+/** **/
+/** Gray and brand colors for use across Bootstrap. **/
+
+GSS_GRAY_BASE: @gray-base;
+GSS_GRAY_DARKER: @gray-darker;
+GSS_GRAY_DARK: @gray-dark;
+GSS_GRAY: @gray;
+GSS_GRAY_LIGHT: @gray-light;
+GSS_GRAY_LIGHTER: @gray-lighter;
+
+GSS_BRAND_PRIMARY: @brand-primary;
+GSS_BRAND_SUCCESS: @brand-success;
+GSS_BRAND_INFO: @brand-info;
+GSS_BRAND_WARNING: @brand-warning;
+GSS_BRAND_DANGER: @brand-danger;
+
+
+/** Scaffolding **/
+/** **/
+/** Settings for some of the most global styles. **/
+
+/**** Background color for `<body>`. **/
+GSS_BODY_BG: @body-bg;
+/**** Global text color on `<body>`. **/
+GSS_TEXT_COLOR: @text-color;
+
+/**** Global textual link color. **/
+GSS_LINK_COLOR: @link-color;
+/**** Link hover color set via `darken()` function. **/
+GSS_LINK_HOVER_COLOR: @link-hover-color;
+/**** Link hover decoration. **/
+GSS_LINK_HOVER_DECORATION: @link-hover-decoration;
+
+
+/** Typography **/
+/** **/
+/** Font, line-height, and color for body text, headings, and more. **/
+
+GSS_FONT_FAMILY_SANS_SERIF: @font-family-sans-serif;
+GSS_FONT_FAMILY_SERIF: @font-family-serif;
+/**** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`. **/
+GSS_FONT_FAMILY_MONOSPACE: @font-family-monospace;
+GSS_FONT_FAMILY_BASE: @font-family-base;
+
+GSS_FONT_SIZE_BASE: @font-size-base;
+GSS_FONT_SIZE_LARGE: @font-size-large;
+GSS_FONT_SIZE_SMALL: @font-size-small;
+
+GSS_FONT_SIZE_H1: @font-size-h1;
+GSS_FONT_SIZE_H2: @font-size-h2;
+GSS_FONT_SIZE_H3: @font-size-h3;
+GSS_FONT_SIZE_H4: @font-size-h4;
+GSS_FONT_SIZE_H5: @font-size-h5;
+GSS_FONT_SIZE_H6: @font-size-h6;
+
+/**** Unit-less `line-height` for use in components like buttons. **/
+GSS_LINE_HEIGHT_BASE: @line-height-base;
+/**** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc. **/
+GSS_LINE_HEIGHT_COMPUTED: @line-height-computed;
+
+/**** By default, this inherits from the `<body>`. **/
+GSS_HEADINGS_FONT_FAMILY: @headings-font-family;
+GSS_HEADINGS_FONT_WEIGHT: @headings-font-weight;
+GSS_HEADINGS_LINE_HEIGHT: @headings-line-height;
+GSS_HEADINGS_COLOR: @headings-color;
+
+
+/** Iconography **/
+/** **/
+/** Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower. **/
+
+/**** Load fonts from this directory. **/
+GSS_ICON_FONT_PATH: @icon-font-path;
+/**** File name for all font files. **/
+GSS_ICON_FONT_NAME: @icon-font-name;
+/**** Element ID within SVG icon file. **/
+GSS_ICON_FONT_SVG_ID: @icon-font-svg-id;
+
+
+/** Components **/
+/** **/
+/** Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start). **/
+
+GSS_PADDING_BASE_VERTICAL: @padding-base-vertical;
+GSS_PADDING_BASE_HORIZONTAL: @padding-base-horizontal;
+
+GSS_PADDING_LARGE_VERTICAL: @padding-large-vertical;
+GSS_PADDING_LARGE_HORIZONTAL: @padding-large-horizontal;
+
+GSS_PADDING_SMALL_VERTICAL: @padding-small-vertical;
+GSS_PADDING_SMALL_HORIZONTAL: @padding-small-horizontal;
+
+GSS_PADDING_XS_VERTICAL: @padding-xs-vertical;
+GSS_PADDING_XS_HORIZONTAL: @padding-xs-horizontal;
+
+GSS_LINE_HEIGHT_LARGE: @line-height-large;
+GSS_LINE_HEIGHT_SMALL: @line-height-small;
+
+GSS_BORDER_RADIUS_BASE: @border-radius-base;
+GSS_BORDER_RADIUS_LARGE: @border-radius-large;
+GSS_BORDER_RADIUS_SMALL: @border-radius-small;
+
+/**** Global color for active items (e.g., navs or dropdowns). **/
+GSS_COMPONENT_ACTIVE_COLOR: @component-active-color;
+/**** Global background color for active items (e.g., navs or dropdowns). **/
+GSS_COMPONENT_ACTIVE_BG: @component-active-bg;
+
+/**** Width of the `border` for generating carets that indicator dropdowns. **/
+GSS_CARET_WIDTH_BASE: @caret-width-base;
+/**** Carets increase slightly in size for larger components. **/
+GSS_CARET_WIDTH_LARGE: @caret-width-large;
+
+
+/** Tables **/
+/** **/
+/** Customizes the `.table` component with basic values, each used across all table variations. **/
+
+/**** Padding for `<th>`s and `<td>`s. **/
+GSS_TABLE_CELL_PADDING: @table-cell-padding;
+/**** Padding for cells in `.table-condensed`. **/
+GSS_TABLE_CONDENSED_CELL_PADDING: @table-condensed-cell-padding;
+
+/**** Default background color used for all tables. **/
+GSS_TABLE_BG: @table-bg;
+/**** Background color used for `.table-striped`. **/
+GSS_TABLE_BG_ACCENT: @table-bg-accent;
+/**** Background color used for `.table-hover`. **/
+GSS_TABLE_BG_HOVER: @table-bg-hover;
+GSS_TABLE_BG_ACTIVE: @table-bg-active;
+
+/**** Border color for table and cell borders. **/
+GSS_TABLE_BORDER_COLOR: @table-border-color;
+
+
+/** Buttons **/
+/** **/
+/** For each of Bootstrap's buttons, define text, background and border color. **/
+
+GSS_BTN_FONT_WEIGHT: @btn-font-weight;
+
+GSS_BTN_DEFAULT_COLOR: @btn-default-color;
+GSS_BTN_DEFAULT_BG: @btn-default-bg;
+GSS_BTN_DEFAULT_BORDER: @btn-default-border;
+
+GSS_BTN_PRIMARY_COLOR: @btn-primary-color;
+GSS_BTN_PRIMARY_BG: @btn-primary-bg;
+GSS_BTN_PRIMARY_BORDER: @btn-primary-border;
+
+GSS_BTN_SUCCESS_COLOR: @btn-success-color;
+GSS_BTN_SUCCESS_BG: @btn-success-bg;
+GSS_BTN_SUCCESS_BORDER: @btn-success-border;
+
+GSS_BTN_INFO_COLOR: @btn-info-color;
+GSS_BTN_INFO_BG: @btn-info-bg;
+GSS_BTN_INFO_BORDER: @btn-info-border;
+
+GSS_BTN_WARNING_COLOR: @btn-warning-color;
+GSS_BTN_WARNING_BG: @btn-warning-bg;
+GSS_BTN_WARNING_BORDER: @btn-warning-border;
+
+GSS_BTN_DANGER_COLOR: @btn-danger-color;
+GSS_BTN_DANGER_BG: @btn-danger-bg;
+GSS_BTN_DANGER_BORDER: @btn-danger-border;
+
+GSS_BTN_LINK_DISABLED_COLOR: @btn-link-disabled-color;
+
+/** Allows for customizing button radius independently from global border radius **/
+GSS_BTN_BORDER_RADIUS_BASE: @btn-border-radius-base;
+GSS_BTN_BORDER_RADIUS_LARGE: @btn-border-radius-large;
+GSS_BTN_BORDER_RADIUS_SMALL: @btn-border-radius-small;
+
+
+/** Forms **/
+/** **/
+/** **/
+
+/**** `<input>` background color **/
+GSS_INPUT_BG: @input-bg;
+/**** `<input disabled>` background color **/
+GSS_INPUT_BG_DISABLED: @input-bg-disabled;
+
+/**** Text color for `<input>`s **/
+GSS_INPUT_COLOR: @input-color;
+/**** `<input>` border color **/
+GSS_INPUT_BORDER: @input-border;
+
+/** TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4 **/
+/**** Default `.form-control` border radius **/
+/** This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS. **/
+GSS_INPUT_BORDER_RADIUS: @input-border-radius;
+/**** Large `.form-control` border radius **/
+GSS_INPUT_BORDER_RADIUS_LARGE: @input-border-radius-large;
+/**** Small `.form-control` border radius **/
+GSS_INPUT_BORDER_RADIUS_SMALL: @input-border-radius-small;
+
+/**** Border color for inputs on focus **/
+GSS_INPUT_BORDER_FOCUS: @input-border-focus;
+
+/**** Placeholder text color **/
+GSS_INPUT_COLOR_PLACEHOLDER: @input-color-placeholder;
+
+/**** Default `.form-control` height **/
+GSS_INPUT_HEIGHT_BASE: @input-height-base;
+/**** Large `.form-control` height **/
+GSS_INPUT_HEIGHT_LARGE: @input-height-large;
+/**** Small `.form-control` height **/
+GSS_INPUT_HEIGHT_SMALL: @input-height-small;
+
+/**** `.form-group` margin **/
+GSS_FORM_GROUP_MARGIN_BOTTOM: @form-group-margin-bottom;
+
+GSS_LEGEND_COLOR: @legend-color;
+GSS_LEGEND_BORDER_COLOR: @legend-border-color;
+
+/**** Background color for textual input addons **/
+GSS_INPUT_GROUP_ADDON_BG: @input-group-addon-bg;
+/**** Border color for textual input addons **/
+GSS_INPUT_GROUP_ADDON_BORDER_COLOR: @input-group-addon-border-color;
+
+/**** Disabled cursor for form controls and buttons. **/
+GSS_CURSOR_DISABLED: @cursor-disabled;
+
+
+/** Dropdowns **/
+/** **/
+/** Dropdown menu container and contents. **/
+
+/**** Background for the dropdown menu. **/
+GSS_DROPDOWN_BG: @dropdown-bg;
+/**** Dropdown menu `border-color`. **/
+GSS_DROPDOWN_BORDER: @dropdown-border;
+/**** Dropdown menu `border-color` **for IE8**. **/
+GSS_DROPDOWN_FALLBACK_BORDER: @dropdown-fallback-border;
+/**** Divider color for between dropdown items. **/
+GSS_DROPDOWN_DIVIDER_BG: @dropdown-divider-bg;
+
+/**** Dropdown link text color. **/
+GSS_DROPDOWN_LINK_COLOR: @dropdown-link-color;
+/**** Hover color for dropdown links. **/
+GSS_DROPDOWN_LINK_HOVER_COLOR: @dropdown-link-hover-color;
+/**** Hover background for dropdown links. **/
+GSS_DROPDOWN_LINK_HOVER_BG: @dropdown-link-hover-bg;
+
+/**** Active dropdown menu item text color. **/
+GSS_DROPDOWN_LINK_ACTIVE_COLOR: @dropdown-link-active-color;
+/**** Active dropdown menu item background color. **/
+GSS_DROPDOWN_LINK_ACTIVE_BG: @dropdown-link-active-bg;
+
+/**** Disabled dropdown menu item background color. **/
+GSS_DROPDOWN_LINK_DISABLED_COLOR: @dropdown-link-disabled-color;
+
+/**** Text color for headers within dropdown menus. **/
+GSS_DROPDOWN_HEADER_COLOR: @dropdown-header-color;
+
+/**** Deprecated `@dropdown-caret-color` as of v3.1.0 **/
+GSS_DROPDOWN_CARET_COLOR: @dropdown-caret-color;
+
+
+/**-- Z-index master list **/
+/** **/
+/** Warning: Avoid customizing these values. They're used for a bird's eye view **/
+/** of components dependent on the z-axis and are designed to all work together. **/
+/** **/
+/** Note: These variables are not generated into the Customizer. **/
+
+GSS_ZINDEX_NAVBAR: @zindex-navbar;
+GSS_ZINDEX_DROPDOWN: @zindex-dropdown;
+GSS_ZINDEX_POPOVER: @zindex-popover;
+GSS_ZINDEX_TOOLTIP: @zindex-tooltip;
+GSS_ZINDEX_NAVBAR_FIXED: @zindex-navbar-fixed;
+GSS_ZINDEX_MODAL_BACKGROUND: @zindex-modal-background;
+GSS_ZINDEX_MODAL: @zindex-modal;
+
+
+/** Media queries breakpoints **/
+/** **/
+/** Define the breakpoints at which your layout will change, adapting to different screen sizes. **/
+
+/** Extra small screen / phone **/
+/**** Deprecated `@screen-xs` as of v3.0.1 **/
+GSS_SCREEN_XS: @screen-xs;
+/**** Deprecated `@screen-xs-min` as of v3.2.0 **/
+GSS_SCREEN_XS_MIN: @screen-xs-min;
+/**** Deprecated `@screen-phone` as of v3.0.1 **/
+GSS_SCREEN_PHONE: @screen-phone;
+
+/** Small screen / tablet **/
+/**** Deprecated `@screen-sm` as of v3.0.1 **/
+GSS_SCREEN_SM: @screen-sm;
+GSS_SCREEN_SM_MIN: @screen-sm-min;
+/**** Deprecated `@screen-tablet` as of v3.0.1 **/
+GSS_SCREEN_TABLET: @screen-tablet;
+
+/** Medium screen / desktop **/
+/**** Deprecated `@screen-md` as of v3.0.1 **/
+GSS_SCREEN_MD: @screen-md;
+GSS_SCREEN_MD_MIN: @screen-md-min;
+/**** Deprecated `@screen-desktop` as of v3.0.1 **/
+GSS_SCREEN_DESKTOP: @screen-desktop;
+
+/** Large screen / wide desktop **/
+/**** Deprecated `@screen-lg` as of v3.0.1 **/
+GSS_SCREEN_LG: @screen-lg;
+GSS_SCREEN_LG_MIN: @screen-lg-min;
+/**** Deprecated `@screen-lg-desktop` as of v3.0.1 **/
+GSS_SCREEN_LG_DESKTOP: @screen-lg-desktop;
+
+/** So media queries don't overlap when required, provide a maximum **/
+GSS_SCREEN_XS_MAX: @screen-xs-max;
+GSS_SCREEN_SM_MAX: @screen-sm-max;
+GSS_SCREEN_MD_MAX: @screen-md-max;
+
+
+/** Grid system **/
+/** **/
+/** Define your custom responsive grid. **/
+
+/**** Number of columns in the grid. **/
+GSS_GRID_COLUMNS: @grid-columns;
+/**** Padding between columns. Gets divided in half for the left and right. **/
+GSS_GRID_GUTTER_WIDTH: @grid-gutter-width;
+/** Navbar collapse **/
+/**** Point at which the navbar becomes uncollapsed. **/
+GSS_GRID_FLOAT_BREAKPOINT: @grid-float-breakpoint;
+/**** Point at which the navbar begins collapsing. **/
+GSS_GRID_FLOAT_BREAKPOINT_MAX: @grid-float-breakpoint-max;
+
+
+/** Container sizes **/
+/** **/
+/** Define the maximum width of `.container` for different screen sizes. **/
+
+/** Small screen / tablet **/
+GSS_CONTAINER_TABLET: @container-tablet;
+/**** For `@screen-sm-min` and up. **/
+GSS_CONTAINER_SM: @container-sm;
+
+/** Medium screen / desktop **/
+GSS_CONTAINER_DESKTOP: @container-desktop;
+/**** For `@screen-md-min` and up. **/
+GSS_CONTAINER_MD: @container-md;
+
+/** Large screen / wide desktop **/
+GSS_CONTAINER_LARGE_DESKTOP: @container-large-desktop;
+/**** For `@screen-lg-min` and up. **/
+GSS_CONTAINER_LG: @container-lg;
+
+
+/** Navbar **/
+/** **/
+/** **/
+
+/** Basics of a navbar **/
+GSS_NAVBAR_HEIGHT: @navbar-height;
+GSS_NAVBAR_MARGIN_BOTTOM: @navbar-margin-bottom;
+GSS_NAVBAR_BORDER_RADIUS: @navbar-border-radius;
+GSS_NAVBAR_PADDING_HORIZONTAL: @navbar-padding-horizontal;
+GSS_NAVBAR_PADDING_VERTICAL: @navbar-padding-vertical;
+GSS_NAVBAR_COLLAPSE_MAX_HEIGHT: @navbar-collapse-max-height;
+
+GSS_NAVBAR_DEFAULT_COLOR: @navbar-default-color;
+GSS_NAVBAR_DEFAULT_BG: @navbar-default-bg;
+GSS_NAVBAR_DEFAULT_BORDER: @navbar-default-border;
+
+/** Navbar links **/
+GSS_NAVBAR_DEFAULT_LINK_COLOR: @navbar-default-link-color;
+GSS_NAVBAR_DEFAULT_LINK_HOVER_COLOR: @navbar-default-link-hover-color;
+GSS_NAVBAR_DEFAULT_LINK_HOVER_BG: @navbar-default-link-hover-bg;
+GSS_NAVBAR_DEFAULT_LINK_ACTIVE_COLOR: @navbar-default-link-active-color;
+GSS_NAVBAR_DEFAULT_LINK_ACTIVE_BG: @navbar-default-link-active-bg;
+GSS_NAVBAR_DEFAULT_LINK_DISABLED_COLOR: @navbar-default-link-disabled-color;
+GSS_NAVBAR_DEFAULT_LINK_DISABLED_BG: @navbar-default-link-disabled-bg;
+
+/** Navbar brand label **/
+GSS_NAVBAR_DEFAULT_BRAND_COLOR: @navbar-default-brand-color;
+GSS_NAVBAR_DEFAULT_BRAND_HOVER_COLOR: @navbar-default-brand-hover-color;
+GSS_NAVBAR_DEFAULT_BRAND_HOVER_BG: @navbar-default-brand-hover-bg;
+
+/** Navbar toggle **/
+GSS_NAVBAR_DEFAULT_TOGGLE_HOVER_BG: @navbar-default-toggle-hover-bg;
+GSS_NAVBAR_DEFAULT_TOGGLE_ICON_BAR_BG: @navbar-default-toggle-icon-bar-bg;
+GSS_NAVBAR_DEFAULT_TOGGLE_BORDER_COLOR: @navbar-default-toggle-border-color;
+
+
+/** Inverted navbar **/
+/** Reset inverted navbar basics **/
+GSS_NAVBAR_INVERSE_COLOR: @navbar-inverse-color;
+GSS_NAVBAR_INVERSE_BG: @navbar-inverse-bg;
+GSS_NAVBAR_INVERSE_BORDER: @navbar-inverse-border;
+
+/** Inverted navbar links **/
+GSS_NAVBAR_INVERSE_LINK_COLOR: @navbar-inverse-link-color;
+GSS_NAVBAR_INVERSE_LINK_HOVER_COLOR: @navbar-inverse-link-hover-color;
+GSS_NAVBAR_INVERSE_LINK_HOVER_BG: @navbar-inverse-link-hover-bg;
+GSS_NAVBAR_INVERSE_LINK_ACTIVE_COLOR: @navbar-inverse-link-active-color;
+GSS_NAVBAR_INVERSE_LINK_ACTIVE_BG: @navbar-inverse-link-active-bg;
+GSS_NAVBAR_INVERSE_LINK_DISABLED_COLOR: @navbar-inverse-link-disabled-color;
+GSS_NAVBAR_INVERSE_LINK_DISABLED_BG: @navbar-inverse-link-disabled-bg;
+
+/** Inverted navbar brand label **/
+GSS_NAVBAR_INVERSE_BRAND_COLOR: @navbar-inverse-brand-color;
+GSS_NAVBAR_INVERSE_BRAND_HOVER_COLOR: @navbar-inverse-brand-hover-color;
+GSS_NAVBAR_INVERSE_BRAND_HOVER_BG: @navbar-inverse-brand-hover-bg;
+
+/** Inverted navbar toggle **/
+GSS_NAVBAR_INVERSE_TOGGLE_HOVER_BG: @navbar-inverse-toggle-hover-bg;
+GSS_NAVBAR_INVERSE_TOGGLE_ICON_BAR_BG: @navbar-inverse-toggle-icon-bar-bg;
+GSS_NAVBAR_INVERSE_TOGGLE_BORDER_COLOR: @navbar-inverse-toggle-border-color;
+
+
+/** Navs **/
+/** **/
+/** **/
+
+/** Shared nav styles **/
+GSS_NAV_LINK_PADDING: @nav-link-padding;
+GSS_NAV_LINK_HOVER_BG: @nav-link-hover-bg;
+
+GSS_NAV_DISABLED_LINK_COLOR: @nav-disabled-link-color;
+GSS_NAV_DISABLED_LINK_HOVER_COLOR: @nav-disabled-link-hover-color;
+
+/** Tabs **/
+GSS_NAV_TABS_BORDER_COLOR: @nav-tabs-border-color;
+
+GSS_NAV_TABS_LINK_HOVER_BORDER_COLOR: @nav-tabs-link-hover-border-color;
+
+GSS_NAV_TABS_ACTIVE_LINK_HOVER_BG: @nav-tabs-active-link-hover-bg;
+GSS_NAV_TABS_ACTIVE_LINK_HOVER_COLOR: @nav-tabs-active-link-hover-color;
+GSS_NAV_TABS_ACTIVE_LINK_HOVER_BORDER_COLOR: @nav-tabs-active-link-hover-border-color;
+
+GSS_NAV_TABS_JUSTIFIED_LINK_BORDER_COLOR: @nav-tabs-justified-link-border-color;
+GSS_NAV_TABS_JUSTIFIED_ACTIVE_LINK_BORDER_COLOR: @nav-tabs-justified-active-link-border-color;
+
+/** Pills **/
+GSS_NAV_PILLS_BORDER_RADIUS: @nav-pills-border-radius;
+GSS_NAV_PILLS_ACTIVE_LINK_HOVER_BG: @nav-pills-active-link-hover-bg;
+GSS_NAV_PILLS_ACTIVE_LINK_HOVER_COLOR: @nav-pills-active-link-hover-color;
+
+
+/** Pagination **/
+/** **/
+/** **/
+
+GSS_PAGINATION_COLOR: @pagination-color;
+GSS_PAGINATION_BG: @pagination-bg;
+GSS_PAGINATION_BORDER: @pagination-border;
+
+GSS_PAGINATION_HOVER_COLOR: @pagination-hover-color;
+GSS_PAGINATION_HOVER_BG: @pagination-hover-bg;
+GSS_PAGINATION_HOVER_BORDER: @pagination-hover-border;
+
+GSS_PAGINATION_ACTIVE_COLOR: @pagination-active-color;
+GSS_PAGINATION_ACTIVE_BG: @pagination-active-bg;
+GSS_PAGINATION_ACTIVE_BORDER: @pagination-active-border;
+
+GSS_PAGINATION_DISABLED_COLOR: @pagination-disabled-color;
+GSS_PAGINATION_DISABLED_BG: @pagination-disabled-bg;
+GSS_PAGINATION_DISABLED_BORDER: @pagination-disabled-border;
+
+
+/** Pager **/
+/** **/
+/** **/
+
+GSS_PAGER_BG: @pager-bg;
+GSS_PAGER_BORDER: @pager-border;
+GSS_PAGER_BORDER_RADIUS: @pager-border-radius;
+
+GSS_PAGER_HOVER_BG: @pager-hover-bg;
+
+GSS_PAGER_ACTIVE_BG: @pager-active-bg;
+GSS_PAGER_ACTIVE_COLOR: @pager-active-color;
+
+GSS_PAGER_DISABLED_COLOR: @pager-disabled-color;
+
+
+/** Jumbotron **/
+/** **/
+/** **/
+
+GSS_JUMBOTRON_PADDING: @jumbotron-padding;
+GSS_JUMBOTRON_COLOR: @jumbotron-color;
+GSS_JUMBOTRON_BG: @jumbotron-bg;
+GSS_JUMBOTRON_HEADING_COLOR: @jumbotron-heading-color;
+GSS_JUMBOTRON_FONT_SIZE: @jumbotron-font-size;
+GSS_JUMBOTRON_HEADING_FONT_SIZE: @jumbotron-heading-font-size;
+
+
+/** Form states and alerts **/
+/** **/
+/** Define colors for form feedback states and, by default, alerts. **/
+
+GSS_STATE_SUCCESS_TEXT: @state-success-text;
+GSS_STATE_SUCCESS_BG: @state-success-bg;
+GSS_STATE_SUCCESS_BORDER: @state-success-border;
+
+GSS_STATE_INFO_TEXT: @state-info-text;
+GSS_STATE_INFO_BG: @state-info-bg;
+GSS_STATE_INFO_BORDER: @state-info-border;
+
+GSS_STATE_WARNING_TEXT: @state-warning-text;
+GSS_STATE_WARNING_BG: @state-warning-bg;
+GSS_STATE_WARNING_BORDER: @state-warning-border;
+
+GSS_STATE_DANGER_TEXT: @state-danger-text;
+GSS_STATE_DANGER_BG: @state-danger-bg;
+GSS_STATE_DANGER_BORDER: @state-danger-border;
+
+
+/** Tooltips **/
+/** **/
+/** **/
+
+/**** Tooltip max width **/
+GSS_TOOLTIP_MAX_WIDTH: @tooltip-max-width;
+/**** Tooltip text color **/
+GSS_TOOLTIP_COLOR: @tooltip-color;
+/**** Tooltip background color **/
+GSS_TOOLTIP_BG: @tooltip-bg;
+GSS_TOOLTIP_OPACITY: @tooltip-opacity;
+
+/**** Tooltip arrow width **/
+GSS_TOOLTIP_ARROW_WIDTH: @tooltip-arrow-width;
+/**** Tooltip arrow color **/
+GSS_TOOLTIP_ARROW_COLOR: @tooltip-arrow-color;
+
+
+/** Popovers **/
+/** **/
+/** **/
+
+/**** Popover body background color **/
+GSS_POPOVER_BG: @popover-bg;
+/**** Popover maximum width **/
+GSS_POPOVER_MAX_WIDTH: @popover-max-width;
+/**** Popover border color **/
+GSS_POPOVER_BORDER_COLOR: @popover-border-color;
+/**** Popover fallback border color **/
+GSS_POPOVER_FALLBACK_BORDER_COLOR: @popover-fallback-border-color;
+
+/**** Popover title background color **/
+GSS_POPOVER_TITLE_BG: @popover-title-bg;
+
+/**** Popover arrow width **/
+GSS_POPOVER_ARROW_WIDTH: @popover-arrow-width;
+/**** Popover arrow color **/
+GSS_POPOVER_ARROW_COLOR: @popover-arrow-color;
+
+/**** Popover outer arrow width **/
+GSS_POPOVER_ARROW_OUTER_WIDTH: @popover-arrow-outer-width;
+/**** Popover outer arrow color **/
+GSS_POPOVER_ARROW_OUTER_COLOR: @popover-arrow-outer-color;
+/**** Popover outer arrow fallback color **/
+GSS_POPOVER_ARROW_OUTER_FALLBACK_COLOR: @popover-arrow-outer-fallback-color;
+
+
+/** Labels **/
+/** **/
+/** **/
+
+/**** Default label background color **/
+GSS_LABEL_DEFAULT_BG: @label-default-bg;
+/**** Primary label background color **/
+GSS_LABEL_PRIMARY_BG: @label-primary-bg;
+/**** Success label background color **/
+GSS_LABEL_SUCCESS_BG: @label-success-bg;
+/**** Info label background color **/
+GSS_LABEL_INFO_BG: @label-info-bg;
+/**** Warning label background color **/
+GSS_LABEL_WARNING_BG: @label-warning-bg;
+/**** Danger label background color **/
+GSS_LABEL_DANGER_BG: @label-danger-bg;
+
+/**** Default label text color **/
+GSS_LABEL_COLOR: @label-color;
+/**** Default text color of a linked label **/
+GSS_LABEL_LINK_HOVER_COLOR: @label-link-hover-color;
+
+
+/** Modals **/
+/** **/
+/** **/
+
+/**** Padding applied to the modal body **/
+GSS_MODAL_INNER_PADDING: @modal-inner-padding;
+
+/**** Padding applied to the modal title **/
+GSS_MODAL_TITLE_PADDING: @modal-title-padding;
+/**** Modal title line-height **/
+GSS_MODAL_TITLE_LINE_HEIGHT: @modal-title-line-height;
+
+/**** Background color of modal content area **/
+GSS_MODAL_CONTENT_BG: @modal-content-bg;
+/**** Modal content border color **/
+GSS_MODAL_CONTENT_BORDER_COLOR: @modal-content-border-color;
+/**** Modal content border color **for IE8** **/
+GSS_MODAL_CONTENT_FALLBACK_BORDER_COLOR: @modal-content-fallback-border-color;
+
+/**** Modal backdrop background color **/
+GSS_MODAL_BACKDROP_BG: @modal-backdrop-bg;
+/**** Modal backdrop opacity **/
+GSS_MODAL_BACKDROP_OPACITY: @modal-backdrop-opacity;
+/**** Modal header border color **/
+GSS_MODAL_HEADER_BORDER_COLOR: @modal-header-border-color;
+/**** Modal footer border color **/
+GSS_MODAL_FOOTER_BORDER_COLOR: @modal-footer-border-color;
+
+GSS_MODAL_LG: @modal-lg;
+GSS_MODAL_MD: @modal-md;
+GSS_MODAL_SM: @modal-sm;
+
+
+/** Alerts **/
+/** **/
+/** Define alert colors, border radius, and padding. **/
+
+GSS_ALERT_PADDING: @alert-padding;
+GSS_ALERT_BORDER_RADIUS: @alert-border-radius;
+GSS_ALERT_LINK_FONT_WEIGHT: @alert-link-font-weight;
+
+GSS_ALERT_SUCCESS_BG: @alert-success-bg;
+GSS_ALERT_SUCCESS_TEXT: @alert-success-text;
+GSS_ALERT_SUCCESS_BORDER: @alert-success-border;
+
+GSS_ALERT_INFO_BG: @alert-info-bg;
+GSS_ALERT_INFO_TEXT: @alert-info-text;
+GSS_ALERT_INFO_BORDER: @alert-info-border;
+
+GSS_ALERT_WARNING_BG: @alert-warning-bg;
+GSS_ALERT_WARNING_TEXT: @alert-warning-text;
+GSS_ALERT_WARNING_BORDER: @alert-warning-border;
+
+GSS_ALERT_DANGER_BG: @alert-danger-bg;
+GSS_ALERT_DANGER_TEXT: @alert-danger-text;
+GSS_ALERT_DANGER_BORDER: @alert-danger-border;
+
+
+/** Progress bars **/
+/** **/
+/** **/
+
+/**** Background color of the whole progress component **/
+GSS_PROGRESS_BG: @progress-bg;
+/**** Progress bar text color **/
+GSS_PROGRESS_BAR_COLOR: @progress-bar-color;
+/**** Variable for setting rounded corners on progress bar. **/
+GSS_PROGRESS_BORDER_RADIUS: @progress-border-radius;
+
+/**** Default progress bar color **/
+GSS_PROGRESS_BAR_BG: @progress-bar-bg;
+/**** Success progress bar color **/
+GSS_PROGRESS_BAR_SUCCESS_BG: @progress-bar-success-bg;
+/**** Warning progress bar color **/
+GSS_PROGRESS_BAR_WARNING_BG: @progress-bar-warning-bg;
+/**** Danger progress bar color **/
+GSS_PROGRESS_BAR_DANGER_BG: @progress-bar-danger-bg;
+/**** Info progress bar color **/
+GSS_PROGRESS_BAR_INFO_BG: @progress-bar-info-bg;
+
+
+/** List group **/
+/** **/
+/** **/
+
+/**** Background color on `.list-group-item` **/
+GSS_LIST_GROUP_BG: @list-group-bg;
+/**** `.list-group-item` border color **/
+GSS_LIST_GROUP_BORDER: @list-group-border;
+/**** List group border radius **/
+GSS_LIST_GROUP_BORDER_RADIUS: @list-group-border-radius;
+
+/**** Background color of single list items on hover **/
+GSS_LIST_GROUP_HOVER_BG: @list-group-hover-bg;
+/**** Text color of active list items **/
+GSS_LIST_GROUP_ACTIVE_COLOR: @list-group-active-color;
+/**** Background color of active list items **/
+GSS_LIST_GROUP_ACTIVE_BG: @list-group-active-bg;
+/**** Border color of active list elements **/
+GSS_LIST_GROUP_ACTIVE_BORDER: @list-group-active-border;
+/**** Text color for content within active list items **/
+GSS_LIST_GROUP_ACTIVE_TEXT_COLOR: @list-group-active-text-color;
+
+/**** Text color of disabled list items **/
+GSS_LIST_GROUP_DISABLED_COLOR: @list-group-disabled-color;
+/**** Background color of disabled list items **/
+GSS_LIST_GROUP_DISABLED_BG: @list-group-disabled-bg;
+/**** Text color for content within disabled list items **/
+GSS_LIST_GROUP_DISABLED_TEXT_COLOR: @list-group-disabled-text-color;
+
+GSS_LIST_GROUP_LINK_COLOR: @list-group-link-color;
+GSS_LIST_GROUP_LINK_HOVER_COLOR: @list-group-link-hover-color;
+GSS_LIST_GROUP_LINK_HEADING_COLOR: @list-group-link-heading-color;
+
+
+/** Panels **/
+/** **/
+/** **/
+
+GSS_PANEL_BG: @panel-bg;
+GSS_PANEL_BODY_PADDING: @panel-body-padding;
+GSS_PANEL_HEADING_PADDING: @panel-heading-padding;
+GSS_PANEL_FOOTER_PADDING: @panel-footer-padding;
+GSS_PANEL_BORDER_RADIUS: @panel-border-radius;
+
+/**** Border color for elements within panels **/
+GSS_PANEL_INNER_BORDER: @panel-inner-border;
+GSS_PANEL_FOOTER_BG: @panel-footer-bg;
+
+GSS_PANEL_DEFAULT_TEXT: @panel-default-text;
+GSS_PANEL_DEFAULT_BORDER: @panel-default-border;
+GSS_PANEL_DEFAULT_HEADING_BG: @panel-default-heading-bg;
+
+GSS_PANEL_PRIMARY_TEXT: @panel-primary-text;
+GSS_PANEL_PRIMARY_BORDER: @panel-primary-border;
+GSS_PANEL_PRIMARY_HEADING_BG: @panel-primary-heading-bg;
+
+GSS_PANEL_SUCCESS_TEXT: @panel-success-text;
+GSS_PANEL_SUCCESS_BORDER: @panel-success-border;
+GSS_PANEL_SUCCESS_HEADING_BG: @panel-success-heading-bg;
+
+GSS_PANEL_INFO_TEXT: @panel-info-text;
+GSS_PANEL_INFO_BORDER: @panel-info-border;
+GSS_PANEL_INFO_HEADING_BG: @panel-info-heading-bg;
+
+GSS_PANEL_WARNING_TEXT: @panel-warning-text;
+GSS_PANEL_WARNING_BORDER: @panel-warning-border;
+GSS_PANEL_WARNING_HEADING_BG: @panel-warning-heading-bg;
+
+GSS_PANEL_DANGER_TEXT: @panel-danger-text;
+GSS_PANEL_DANGER_BORDER: @panel-danger-border;
+GSS_PANEL_DANGER_HEADING_BG: @panel-danger-heading-bg;
+
+GSS_PANEL_INVERSE_TEXT: @panel-inverse-text;
+GSS_PANEL_INVERSE_BORDER: @panel-inverse-border;
+GSS_PANEL_INVERSE_HEADING_BG: @panel-inverse-heading-bg;
+
+/** Thumbnails **/
+/** **/
+/** **/
+
+/**** Padding around the thumbnail image **/
+GSS_THUMBNAIL_PADDING: @thumbnail-padding;
+/**** Thumbnail background color **/
+GSS_THUMBNAIL_BG: @thumbnail-bg;
+/**** Thumbnail border color **/
+GSS_THUMBNAIL_BORDER: @thumbnail-border;
+/**** Thumbnail border radius **/
+GSS_THUMBNAIL_BORDER_RADIUS: @thumbnail-border-radius;
+
+/**** Custom text color for thumbnail captions **/
+GSS_THUMBNAIL_CAPTION_COLOR: @thumbnail-caption-color;
+/**** Padding around the thumbnail caption **/
+GSS_THUMBNAIL_CAPTION_PADDING: @thumbnail-caption-padding;
+
+
+/** Wells **/
+/** **/
+/** **/
+
+GSS_WELL_BG: @well-bg;
+GSS_WELL_BORDER: @well-border;
+
+
+/** Badges **/
+/** **/
+/** **/
+
+GSS_BADGE_COLOR: @badge-color;
+/**** Linked badge text color on hover **/
+GSS_BADGE_LINK_HOVER_COLOR: @badge-link-hover-color;
+GSS_BADGE_BG: @badge-bg;
+
+/**** Badge text color in active nav link **/
+GSS_BADGE_ACTIVE_COLOR: @badge-active-color;
+/**** Badge background color in active nav link **/
+GSS_BADGE_ACTIVE_BG: @badge-active-bg;
+
+GSS_BADGE_FONT_WEIGHT: @badge-font-weight;
+GSS_BADGE_LINE_HEIGHT: @badge-line-height;
+GSS_BADGE_BORDER_RADIUS: @badge-border-radius;
+
+
+/** Breadcrumbs **/
+/** **/
+/** **/
+
+GSS_BREADCRUMB_PADDING_VERTICAL: @breadcrumb-padding-vertical;
+GSS_BREADCRUMB_PADDING_HORIZONTAL: @breadcrumb-padding-horizontal;
+/**** Breadcrumb background color **/
+GSS_BREADCRUMB_BG: @breadcrumb-bg;
+/**** Breadcrumb text color **/
+GSS_BREADCRUMB_COLOR: @breadcrumb-color;
+/**** Text color of current page in the breadcrumb **/
+GSS_BREADCRUMB_ACTIVE_COLOR: @breadcrumb-active-color;
+/**** Textual separator for between breadcrumb elements **/
+GSS_BREADCRUMB_SEPARATOR: @breadcrumb-separator;
+
+
+/** Carousel **/
+/** **/
+/** **/
+
+GSS_CAROUSEL_TEXT_SHADOW: @carousel-text-shadow;
+
+GSS_CAROUSEL_CONTROL_COLOR: @carousel-control-color;
+GSS_CAROUSEL_CONTROL_WIDTH: @carousel-control-width;
+GSS_CAROUSEL_CONTROL_OPACITY: @carousel-control-opacity;
+GSS_CAROUSEL_CONTROL_FONT_SIZE: @carousel-control-font-size;
+
+GSS_CAROUSEL_INDICATOR_ACTIVE_BG: @carousel-indicator-active-bg;
+GSS_CAROUSEL_INDICATOR_BORDER_COLOR: @carousel-indicator-border-color;
+
+GSS_CAROUSEL_CAPTION_COLOR: @carousel-caption-color;
+
+
+/** Close **/
+/** **/
+/** **/
+
+GSS_CLOSE_FONT_WEIGHT: @close-font-weight;
+GSS_CLOSE_COLOR: @close-color;
+GSS_CLOSE_TEXT_SHADOW: @close-text-shadow;
+
+
+/** Code **/
+/** **/
+/** **/
+
+GSS_CODE_COLOR: @code-color;
+GSS_CODE_BG: @code-bg;
+
+GSS_KBD_COLOR: @kbd-color;
+GSS_KBD_BG: @kbd-bg;
+
+GSS_PRE_BG: @pre-bg;
+GSS_PRE_COLOR: @pre-color;
+GSS_PRE_BORDER_COLOR: @pre-border-color;
+GSS_PRE_SCROLLABLE_MAX_HEIGHT: @pre-scrollable-max-height;
+
+
+/** Type **/
+/** **/
+/** **/
+
+/**** Horizontal offset for forms and lists. **/
+GSS_COMPONENT_OFFSET_HORIZONTAL: @component-offset-horizontal;
+/**** Text muted color **/
+GSS_TEXT_MUTED: @text-muted;
+/**** Abbreviations and acronyms border color **/
+GSS_ABBR_BORDER_COLOR: @abbr-border-color;
+/**** Headings small color **/
+GSS_HEADINGS_SMALL_COLOR: @headings-small-color;
+/**** Blockquote small color **/
+GSS_BLOCKQUOTE_SMALL_COLOR: @blockquote-small-color;
+/**** Blockquote font size **/
+GSS_BLOCKQUOTE_FONT_SIZE: @blockquote-font-size;
+/**** Blockquote border color **/
+GSS_BLOCKQUOTE_BORDER_COLOR: @blockquote-border-color;
+/**** Page header border color **/
+GSS_PAGE_HEADER_BORDER_COLOR: @page-header-border-color;
+/**** Width of horizontal description list titles **/
+GSS_DL_HORIZONTAL_OFFSET: @dl-horizontal-offset;
+/**** Point at which .dl-horizontal becomes horizontal **/
+GSS_DL_HORIZONTAL_BREAKPOINT: @dl-horizontal-breakpoint;
+/**** Horizontal line color. **/
+GSS_HR_BORDER: @hr-border;
+
+}
+//bower_components/bootstrap/less//jumbotron.less
+.GSS-EXTRA{
+GSS_DARKEN_JUMBOTRON_BG_10PCT: darken(@jumbotron-bg, 10%); //bower_components/bootstrap/less//jumbotron.less:24
+}
+//bower_components/bootstrap/less//navbar.less
+.GSS-EXTRA{
+GSS_DARKEN_NAVBAR_INVERSE_BG_7PCT: darken(@navbar-inverse-bg, 7%); //bower_components/bootstrap/less//navbar.less:587
+}
+//bower_components/bootstrap/less//popovers.less
+.GSS-EXTRA{
+GSS_DARKEN_POPOVER_TITLE_BG_5PCT: darken(@popover-title-bg, 5%); //bower_components/bootstrap/less//popovers.less:37
+}

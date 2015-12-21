@@ -1,0 +1,672 @@
+/** file used to overriding original bootstrap variables.less file **/
+/** **/
+/** Variables **/
+/** -------------------------------------------------- **/
+/** Colors **/
+/** **/
+/** Gray and brand colors for use across Bootstrap. **/
+@def C_GRAY_BASE                                    #000;
+@def C_GRAY_DARKER                                  #222222;
+@def C_GRAY_DARK                                    #333333;
+@def C_GRAY                                         #555555;
+@def C_GRAY_LIGHT                                   #777777;
+@def C_GRAY_LIGHTER                                 #eeeeee;
+@def C_BRAND_PRIMARY                                #337ab7;
+@def C_BRAND_SUCCESS                                #5cb85c;
+@def C_BRAND_INFO                                   #5bc0de;
+@def C_BRAND_WARNING                                #f0ad4e;
+@def C_BRAND_DANGER                                 #d9534f;
+/** Scaffolding **/
+/** **/
+/** Settings for some of the most global styles. **/
+/**** Background color for `<body>`. **/
+@def C_BODY_BG                                      #fff;
+/**** Global text color on `<body>`. **/
+@def C_TEXT_COLOR                                   #333333;
+/**** Global textual link color. **/
+@def C_LINK_COLOR                                   #337ab7;
+/**** Link hover color set via `darken()` function. **/
+@def C_LINK_HOVER_COLOR                             #23527c;
+/**** Link hover decoration. **/
+@def LINK_HOVER_DECORATION                          underline;
+/** Typography **/
+/** **/
+/** Font, line-height, and color for body text, headings, and more. **/
+@def FONT_FAMILY_SANS_SERIF                         "Helvetica Neue", Helvetica, Arial, sans-serif;
+@def FONT_FAMILY_SERIF                              Georgia, "Times New Roman", Times, serif;
+/**** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`. **/
+@def FONT_FAMILY_MONOSPACE                          Menlo, Monaco, Consolas, "Courier New", monospace;
+@def FONT_FAMILY_BASE                               "Helvetica Neue", Helvetica, Arial, sans-serif;
+@def S_FONT_SIZE_BASE                               14px;
+@def S_FONT_SIZE_LARGE                              18px;
+@def S_FONT_SIZE_SMALL                              12px;
+@def S_FONT_SIZE_H1                                 36px;
+@def S_FONT_SIZE_H2                                 30px;
+@def S_FONT_SIZE_H3                                 24px;
+@def S_FONT_SIZE_H4                                 18px;
+@def S_FONT_SIZE_H5                                 14px;
+@def S_FONT_SIZE_H6                                 12px;
+/**** Unit-less `line-height` for use in components like buttons. **/
+@def LINE_HEIGHT_BASE                               1.42857143;
+/**** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc. **/
+@def S_LINE_HEIGHT_COMPUTED                         20px;
+/**** By default, this inherits from the `<body>`. **/
+@def HEADINGS_FONT_FAMILY                           inherit;
+@def HEADINGS_FONT_WEIGHT                           500;
+@def HEADINGS_LINE_HEIGHT                           1.1;
+@def C_HEADINGS_COLOR                               inherit;
+/** Iconography **/
+/** **/
+/** Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower. **/
+/**** Load fonts from this directory. **/
+@def ICON_FONT_PATH                                 "../fonts/";
+/**** File name for all font files. **/
+@def ICON_FONT_NAME                                 "glyphicons-halflings-regular";
+/**** Element ID within SVG icon file. **/
+@def ICON_FONT_SVG_ID                               "glyphicons_halflingsregular";
+/** Components **/
+/** **/
+/** Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start). **/
+@def S_PADDING_BASE_VERTICAL                        6px;
+@def S_PADDING_BASE_HORIZONTAL                      12px;
+@def S_PADDING_LARGE_VERTICAL                       10px;
+@def S_PADDING_LARGE_HORIZONTAL                     16px;
+@def S_PADDING_SMALL_VERTICAL                       5px;
+@def S_PADDING_SMALL_HORIZONTAL                     10px;
+@def S_PADDING_XS_VERTICAL                          1px;
+@def S_PADDING_XS_HORIZONTAL                        5px;
+@def LINE_HEIGHT_LARGE                              1.3333333;
+@def LINE_HEIGHT_SMALL                              1.5;
+@def S_BORDER_RADIUS_BASE                           4px;
+@def S_BORDER_RADIUS_LARGE                          6px;
+@def S_BORDER_RADIUS_SMALL                          3px;
+/**** Global color for active items (e.g., navs or dropdowns). **/
+@def C_COMPONENT_ACTIVE_COLOR                       #fff;
+/**** Global background color for active items (e.g., navs or dropdowns). **/
+@def C_COMPONENT_ACTIVE_BG                          #337ab7;
+/**** Width of the `border` for generating carets that indicator dropdowns. **/
+@def S_CARET_WIDTH_BASE                             4px;
+/**** Carets increase slightly in size for larger components. **/
+@def S_CARET_WIDTH_LARGE                            5px;
+/** Tables **/
+/** **/
+/** Customizes the `.table` component with basic values, each used across all table variations. **/
+/**** Padding for `<th>`s and `<td>`s. **/
+@def S_TABLE_CELL_PADDING                           8px;
+/**** Padding for cells in `.table-condensed`. **/
+@def S_TABLE_CONDENSED_CELL_PADDING                 5px;
+/**** Default background color used for all tables. **/
+@def TABLE_BG                                       transparent;
+/**** Background color used for `.table-striped`. **/
+@def C_TABLE_BG_ACCENT                              #f9f9f9;
+/**** Background color used for `.table-hover`. **/
+@def C_TABLE_BG_HOVER                               #f5f5f5;
+@def C_TABLE_BG_ACTIVE                              #f5f5f5;
+/**** Border color for table and cell borders. **/
+@def C_TABLE_BORDER_COLOR                           #ddd;
+/** Buttons **/
+/** **/
+/** For each of Bootstrap's buttons, define text, background and border color. **/
+@def BTN_FONT_WEIGHT                                normal;
+@def C_BTN_DEFAULT_COLOR                            #333;
+@def C_BTN_DEFAULT_BG                               #fff;
+@def C_BTN_DEFAULT_BORDER                           #ccc;
+@def C_BTN_PRIMARY_COLOR                            #fff;
+@def C_BTN_PRIMARY_BG                               #337ab7;
+@def C_BTN_PRIMARY_BORDER                           #2e6da4;
+@def C_BTN_SUCCESS_COLOR                            #fff;
+@def C_BTN_SUCCESS_BG                               #5cb85c;
+@def C_BTN_SUCCESS_BORDER                           #4cae4c;
+@def C_BTN_INFO_COLOR                               #fff;
+@def C_BTN_INFO_BG                                  #5bc0de;
+@def C_BTN_INFO_BORDER                              #46b8da;
+@def C_BTN_WARNING_COLOR                            #fff;
+@def C_BTN_WARNING_BG                               #f0ad4e;
+@def C_BTN_WARNING_BORDER                           #eea236;
+@def C_BTN_DANGER_COLOR                             #fff;
+@def C_BTN_DANGER_BG                                #d9534f;
+@def C_BTN_DANGER_BORDER                            #d43f3a;
+@def C_BTN_LINK_DISABLED_COLOR                      #777777;
+/** Allows for customizing button radius independently from global border radius **/
+@def S_BTN_BORDER_RADIUS_BASE                       4px;
+@def S_BTN_BORDER_RADIUS_LARGE                      6px;
+@def S_BTN_BORDER_RADIUS_SMALL                      3px;
+/** Forms **/
+/** **/
+/** **/
+/**** `<input>` background color **/
+@def C_INPUT_BG                                     #fff;
+/**** `<input disabled>` background color **/
+@def C_INPUT_BG_DISABLED                            #eeeeee;
+/**** Text color for `<input>`s **/
+@def C_INPUT_COLOR                                  #555555;
+/**** `<input>` border color **/
+@def C_INPUT_BORDER                                 #ccc;
+/** TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4 **/
+/**** Default `.form-control` border radius **/
+/** This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS. **/
+@def S_INPUT_BORDER_RADIUS                          4px;
+/**** Large `.form-control` border radius **/
+@def S_INPUT_BORDER_RADIUS_LARGE                    6px;
+/**** Small `.form-control` border radius **/
+@def S_INPUT_BORDER_RADIUS_SMALL                    3px;
+/**** Border color for inputs on focus **/
+@def C_INPUT_BORDER_FOCUS                           #66afe9;
+/**** Placeholder text color **/
+@def C_INPUT_COLOR_PLACEHOLDER                      #999;
+/**** Default `.form-control` height **/
+@def S_INPUT_HEIGHT_BASE                            34px;
+/**** Large `.form-control` height **/
+@def S_INPUT_HEIGHT_LARGE                           46px;
+/**** Small `.form-control` height **/
+@def S_INPUT_HEIGHT_SMALL                           30px;
+/**** `.form-group` margin **/
+@def S_FORM_GROUP_MARGIN_BOTTOM                     15px;
+@def C_LEGEND_COLOR                                 #333333;
+@def C_LEGEND_BORDER_COLOR                          #e5e5e5;
+/**** Background color for textual input addons **/
+@def C_INPUT_GROUP_ADDON_BG                         #eeeeee;
+/**** Border color for textual input addons **/
+@def C_INPUT_GROUP_ADDON_BORDER_COLOR               #ccc;
+/**** Disabled cursor for form controls and buttons. **/
+@def CURSOR_DISABLED                                not-allowed;
+/** Dropdowns **/
+/** **/
+/** Dropdown menu container and contents. **/
+/**** Background for the dropdown menu. **/
+@def C_DROPDOWN_BG                                  #fff;
+/**** Dropdown menu `border-color`. **/
+@def C_DROPDOWN_BORDER                              rgba(0, 0, 0, 0.15);
+/**** Dropdown menu `border-color` **for IE8**. **/
+@def C_DROPDOWN_FALLBACK_BORDER                     #ccc;
+/**** Divider color for between dropdown items. **/
+@def C_DROPDOWN_DIVIDER_BG                          #e5e5e5;
+/**** Dropdown link text color. **/
+@def C_DROPDOWN_LINK_COLOR                          #333333;
+/**** Hover color for dropdown links. **/
+@def C_DROPDOWN_LINK_HOVER_COLOR                    #262626;
+/**** Hover background for dropdown links. **/
+@def C_DROPDOWN_LINK_HOVER_BG                       #f5f5f5;
+/**** Active dropdown menu item text color. **/
+@def C_DROPDOWN_LINK_ACTIVE_COLOR                   #fff;
+/**** Active dropdown menu item background color. **/
+@def C_DROPDOWN_LINK_ACTIVE_BG                      #337ab7;
+/**** Disabled dropdown menu item background color. **/
+@def C_DROPDOWN_LINK_DISABLED_COLOR                 #777777;
+/**** Text color for headers within dropdown menus. **/
+@def C_DROPDOWN_HEADER_COLOR                        #777777;
+/**** Deprecated `@dropdown-caret-color` as of v3.1.0 **/
+@def C_DROPDOWN_CARET_COLOR                         #000;
+/**-- Z-index master list **/
+/** **/
+/** Warning: Avoid customizing these values. They're used for a bird's eye view **/
+/** of components dependent on the z-axis and are designed to all work together. **/
+/** **/
+/** Note: These variables are not generated into the Customizer. **/
+@def ZINDEX_NAVBAR                                  1000;
+@def ZINDEX_DROPDOWN                                1000;
+@def ZINDEX_POPOVER                                 1060;
+@def ZINDEX_TOOLTIP                                 1070;
+@def ZINDEX_NAVBAR_FIXED                            1030;
+@def ZINDEX_MODAL_BACKGROUND                        1040;
+@def ZINDEX_MODAL                                   1050;
+/** Media queries breakpoints **/
+/** **/
+/** Define the breakpoints at which your layout will change, adapting to different screen sizes. **/
+/** Extra small screen / phone **/
+/**** Deprecated `@screen-xs` as of v3.0.1 **/
+@def S_SCREEN_XS                                    480px;
+/**** Deprecated `@screen-xs-min` as of v3.2.0 **/
+@def S_SCREEN_XS_MIN                                480px;
+/**** Deprecated `@screen-phone` as of v3.0.1 **/
+@def S_SCREEN_PHONE                                 480px;
+/** Small screen / tablet **/
+/**** Deprecated `@screen-sm` as of v3.0.1 **/
+@def S_SCREEN_SM                                    768px;
+@def S_SCREEN_SM_MIN                                768px;
+/**** Deprecated `@screen-tablet` as of v3.0.1 **/
+@def S_SCREEN_TABLET                                768px;
+/** Medium screen / desktop **/
+/**** Deprecated `@screen-md` as of v3.0.1 **/
+@def S_SCREEN_MD                                    992px;
+@def S_SCREEN_MD_MIN                                992px;
+/**** Deprecated `@screen-desktop` as of v3.0.1 **/
+@def S_SCREEN_DESKTOP                               992px;
+/** Large screen / wide desktop **/
+/**** Deprecated `@screen-lg` as of v3.0.1 **/
+@def S_SCREEN_LG                                    1200px;
+@def S_SCREEN_LG_MIN                                1200px;
+/**** Deprecated `@screen-lg-desktop` as of v3.0.1 **/
+@def S_SCREEN_LG_DESKTOP                            1200px;
+/** So media queries don't overlap when required, provide a maximum **/
+@def S_SCREEN_XS_MAX                                767px;
+@def S_SCREEN_SM_MAX                                991px;
+@def S_SCREEN_MD_MAX                                1199px;
+/** Grid system **/
+/** **/
+/** Define your custom responsive grid. **/
+/**** Number of columns in the grid. **/
+@def GRID_COLUMNS                                   12;
+/**** Padding between columns. Gets divided in half for the left and right. **/
+@def S_GRID_GUTTER_WIDTH                            30px;
+/** Navbar collapse **/
+/**** Point at which the navbar becomes uncollapsed. **/
+@def S_GRID_FLOAT_BREAKPOINT                        768px;
+/**** Point at which the navbar begins collapsing. **/
+@def S_GRID_FLOAT_BREAKPOINT_MAX                    767px;
+/** Container sizes **/
+/** **/
+/** Define the maximum width of `.container` for different screen sizes. **/
+/** Small screen / tablet **/
+@def S_CONTAINER_TABLET                             750px;
+/**** For `@screen-sm-min` and up. **/
+@def S_CONTAINER_SM                                 750px;
+/** Medium screen / desktop **/
+@def S_CONTAINER_DESKTOP                            970px;
+/**** For `@screen-md-min` and up. **/
+@def S_CONTAINER_MD                                 970px;
+/** Large screen / wide desktop **/
+@def S_CONTAINER_LARGE_DESKTOP                      1170px;
+/**** For `@screen-lg-min` and up. **/
+@def S_CONTAINER_LG                                 1170px;
+/** Navbar **/
+/** **/
+/** **/
+/** Basics of a navbar **/
+@def S_NAVBAR_HEIGHT                                50px;
+@def S_NAVBAR_MARGIN_BOTTOM                         20px;
+@def S_NAVBAR_BORDER_RADIUS                         4px;
+@def S_NAVBAR_PADDING_HORIZONTAL                    15px;
+@def S_NAVBAR_PADDING_VERTICAL                      15px;
+@def S_NAVBAR_COLLAPSE_MAX_HEIGHT                   340px;
+@def C_NAVBAR_DEFAULT_COLOR                         #777;
+@def C_NAVBAR_DEFAULT_BG                            #f8f8f8;
+@def C_NAVBAR_DEFAULT_BORDER                        #e7e7e7;
+/** Navbar links **/
+@def C_NAVBAR_DEFAULT_LINK_COLOR                    #777;
+@def C_NAVBAR_DEFAULT_LINK_HOVER_COLOR              #333;
+@def NAVBAR_DEFAULT_LINK_HOVER_BG                   transparent;
+@def C_NAVBAR_DEFAULT_LINK_ACTIVE_COLOR             #555;
+@def C_NAVBAR_DEFAULT_LINK_ACTIVE_BG                #e7e7e7;
+@def C_NAVBAR_DEFAULT_LINK_DISABLED_COLOR           #ccc;
+@def NAVBAR_DEFAULT_LINK_DISABLED_BG                transparent;
+/** Navbar brand label **/
+@def C_NAVBAR_DEFAULT_BRAND_COLOR                   #777;
+@def C_NAVBAR_DEFAULT_BRAND_HOVER_COLOR             #5e5e5e;
+@def NAVBAR_DEFAULT_BRAND_HOVER_BG                  transparent;
+/** Navbar toggle **/
+@def C_NAVBAR_DEFAULT_TOGGLE_HOVER_BG               #ddd;
+@def C_NAVBAR_DEFAULT_TOGGLE_ICON_BAR_BG            #888;
+@def C_NAVBAR_DEFAULT_TOGGLE_BORDER_COLOR           #ddd;
+/** Inverted navbar **/
+/** Reset inverted navbar basics **/
+@def C_NAVBAR_INVERSE_COLOR                         #9d9d9d;
+@def C_NAVBAR_INVERSE_BG                            #222;
+@def C_NAVBAR_INVERSE_BORDER                        #080808;
+/** Inverted navbar links **/
+@def C_NAVBAR_INVERSE_LINK_COLOR                    #9d9d9d;
+@def C_NAVBAR_INVERSE_LINK_HOVER_COLOR              #fff;
+@def NAVBAR_INVERSE_LINK_HOVER_BG                   transparent;
+@def C_NAVBAR_INVERSE_LINK_ACTIVE_COLOR             #fff;
+@def C_NAVBAR_INVERSE_LINK_ACTIVE_BG                #080808;
+@def C_NAVBAR_INVERSE_LINK_DISABLED_COLOR           #444;
+@def NAVBAR_INVERSE_LINK_DISABLED_BG                transparent;
+/** Inverted navbar brand label **/
+@def C_NAVBAR_INVERSE_BRAND_COLOR                   #9d9d9d;
+@def C_NAVBAR_INVERSE_BRAND_HOVER_COLOR             #fff;
+@def NAVBAR_INVERSE_BRAND_HOVER_BG                  transparent;
+/** Inverted navbar toggle **/
+@def C_NAVBAR_INVERSE_TOGGLE_HOVER_BG               #333;
+@def C_NAVBAR_INVERSE_TOGGLE_ICON_BAR_BG            #fff;
+@def C_NAVBAR_INVERSE_TOGGLE_BORDER_COLOR           #333;
+/** Navs **/
+/** **/
+/** **/
+/** Shared nav styles **/
+@def S_NAV_LINK_PADDING                             10px 15px;
+@def C_NAV_LINK_HOVER_BG                            #eeeeee;
+@def C_NAV_DISABLED_LINK_COLOR                      #777777;
+@def C_NAV_DISABLED_LINK_HOVER_COLOR                #777777;
+/** Tabs **/
+@def C_NAV_TABS_BORDER_COLOR                        #ddd;
+@def C_NAV_TABS_LINK_HOVER_BORDER_COLOR             #eeeeee;
+@def C_NAV_TABS_ACTIVE_LINK_HOVER_BG                #fff;
+@def C_NAV_TABS_ACTIVE_LINK_HOVER_COLOR             #555555;
+@def C_NAV_TABS_ACTIVE_LINK_HOVER_BORDER_COLOR      #ddd;
+@def C_NAV_TABS_JUSTIFIED_LINK_BORDER_COLOR         #ddd;
+@def C_NAV_TABS_JUSTIFIED_ACTIVE_LINK_BORDER_COLOR  #fff;
+/** Pills **/
+@def S_NAV_PILLS_BORDER_RADIUS                      4px;
+@def C_NAV_PILLS_ACTIVE_LINK_HOVER_BG               #337ab7;
+@def C_NAV_PILLS_ACTIVE_LINK_HOVER_COLOR            #fff;
+/** Pagination **/
+/** **/
+/** **/
+@def C_PAGINATION_COLOR                             #337ab7;
+@def C_PAGINATION_BG                                #fff;
+@def C_PAGINATION_BORDER                            #ddd;
+@def C_PAGINATION_HOVER_COLOR                       #23527c;
+@def C_PAGINATION_HOVER_BG                          #eeeeee;
+@def C_PAGINATION_HOVER_BORDER                      #ddd;
+@def C_PAGINATION_ACTIVE_COLOR                      #fff;
+@def C_PAGINATION_ACTIVE_BG                         #337ab7;
+@def C_PAGINATION_ACTIVE_BORDER                     #337ab7;
+@def C_PAGINATION_DISABLED_COLOR                    #777777;
+@def C_PAGINATION_DISABLED_BG                       #fff;
+@def C_PAGINATION_DISABLED_BORDER                   #ddd;
+/** Pager **/
+/** **/
+/** **/
+@def C_PAGER_BG                                     #fff;
+@def C_PAGER_BORDER                                 #ddd;
+@def S_PAGER_BORDER_RADIUS                          15px;
+@def C_PAGER_HOVER_BG                               #eeeeee;
+@def C_PAGER_ACTIVE_BG                              #337ab7;
+@def C_PAGER_ACTIVE_COLOR                           #fff;
+@def C_PAGER_DISABLED_COLOR                         #777777;
+/** Jumbotron **/
+/** **/
+/** **/
+@def S_JUMBOTRON_PADDING                            30px;
+@def C_JUMBOTRON_COLOR                              inherit;
+@def C_JUMBOTRON_BG                                 #eeeeee;
+@def C_JUMBOTRON_HEADING_COLOR                      inherit;
+@def S_JUMBOTRON_FONT_SIZE                          21px;
+@def S_JUMBOTRON_HEADING_FONT_SIZE                  63px;
+/** Form states and alerts **/
+/** **/
+/** Define colors for form feedback states and, by default, alerts. **/
+@def C_STATE_SUCCESS_TEXT                           #3c763d;
+@def C_STATE_SUCCESS_BG                             #dff0d8;
+@def C_STATE_SUCCESS_BORDER                         #d6e9c6;
+@def C_STATE_INFO_TEXT                              #31708f;
+@def C_STATE_INFO_BG                                #d9edf7;
+@def C_STATE_INFO_BORDER                            #bce8f1;
+@def C_STATE_WARNING_TEXT                           #8a6d3b;
+@def C_STATE_WARNING_BG                             #fcf8e3;
+@def C_STATE_WARNING_BORDER                         #faebcc;
+@def C_STATE_DANGER_TEXT                            #a94442;
+@def C_STATE_DANGER_BG                              #f2dede;
+@def C_STATE_DANGER_BORDER                          #ebccd1;
+/** Tooltips **/
+/** **/
+/** **/
+/**** Tooltip max width **/
+@def S_TOOLTIP_MAX_WIDTH                            200px;
+/**** Tooltip text color **/
+@def C_TOOLTIP_COLOR                                #fff;
+/**** Tooltip background color **/
+@def C_TOOLTIP_BG                                   #000;
+@def TOOLTIP_OPACITY                                0.9;
+/**** Tooltip arrow width **/
+@def S_TOOLTIP_ARROW_WIDTH                          5px;
+/**** Tooltip arrow color **/
+@def C_TOOLTIP_ARROW_COLOR                          #000;
+/** Popovers **/
+/** **/
+/** **/
+/**** Popover body background color **/
+@def C_POPOVER_BG                                   #fff;
+/**** Popover maximum width **/
+@def S_POPOVER_MAX_WIDTH                            276px;
+/**** Popover border color **/
+@def C_POPOVER_BORDER_COLOR                         rgba(0, 0, 0, 0.2);
+/**** Popover fallback border color **/
+@def C_POPOVER_FALLBACK_BORDER_COLOR                #ccc;
+/**** Popover title background color **/
+@def C_POPOVER_TITLE_BG                             #f7f7f7;
+/**** Popover arrow width **/
+@def S_POPOVER_ARROW_WIDTH                          10px;
+/**** Popover arrow color **/
+@def C_POPOVER_ARROW_COLOR                          #fff;
+/**** Popover outer arrow width **/
+@def S_POPOVER_ARROW_OUTER_WIDTH                    11px;
+/**** Popover outer arrow color **/
+@def C_POPOVER_ARROW_OUTER_COLOR                    rgba(0, 0, 0, 0.25);
+/**** Popover outer arrow fallback color **/
+@def C_POPOVER_ARROW_OUTER_FALLBACK_COLOR           #999999;
+/** Labels **/
+/** **/
+/** **/
+/**** Default label background color **/
+@def C_LABEL_DEFAULT_BG                             #777777;
+/**** Primary label background color **/
+@def C_LABEL_PRIMARY_BG                             #337ab7;
+/**** Success label background color **/
+@def C_LABEL_SUCCESS_BG                             #5cb85c;
+/**** Info label background color **/
+@def C_LABEL_INFO_BG                                #5bc0de;
+/**** Warning label background color **/
+@def C_LABEL_WARNING_BG                             #f0ad4e;
+/**** Danger label background color **/
+@def C_LABEL_DANGER_BG                              #d9534f;
+/**** Default label text color **/
+@def C_LABEL_COLOR                                  #fff;
+/**** Default text color of a linked label **/
+@def C_LABEL_LINK_HOVER_COLOR                       #fff;
+/** Modals **/
+/** **/
+/** **/
+/**** Padding applied to the modal body **/
+@def S_MODAL_INNER_PADDING                          15px;
+/**** Padding applied to the modal title **/
+@def S_MODAL_TITLE_PADDING                          15px;
+/**** Modal title line-height **/
+@def MODAL_TITLE_LINE_HEIGHT                        1.42857143;
+/**** Background color of modal content area **/
+@def C_MODAL_CONTENT_BG                             #fff;
+/**** Modal content border color **/
+@def C_MODAL_CONTENT_BORDER_COLOR                   rgba(0, 0, 0, 0.2);
+/**** Modal content border color **for IE8** **/
+@def C_MODAL_CONTENT_FALLBACK_BORDER_COLOR          #999;
+/**** Modal backdrop background color **/
+@def C_MODAL_BACKDROP_BG                            #000;
+/**** Modal backdrop opacity **/
+@def MODAL_BACKDROP_OPACITY                         0.5;
+/**** Modal header border color **/
+@def C_MODAL_HEADER_BORDER_COLOR                    #e5e5e5;
+/**** Modal footer border color **/
+@def C_MODAL_FOOTER_BORDER_COLOR                    #e5e5e5;
+@def S_MODAL_LG                                     900px;
+@def S_MODAL_MD                                     600px;
+@def S_MODAL_SM                                     300px;
+/** Alerts **/
+/** **/
+/** Define alert colors, border radius, and padding. **/
+@def S_ALERT_PADDING                                15px;
+@def S_ALERT_BORDER_RADIUS                          4px;
+@def ALERT_LINK_FONT_WEIGHT                         bold;
+@def C_ALERT_SUCCESS_BG                             #dff0d8;
+@def C_ALERT_SUCCESS_TEXT                           #3c763d;
+@def C_ALERT_SUCCESS_BORDER                         #d6e9c6;
+@def C_ALERT_INFO_BG                                #d9edf7;
+@def C_ALERT_INFO_TEXT                              #31708f;
+@def C_ALERT_INFO_BORDER                            #bce8f1;
+@def C_ALERT_WARNING_BG                             #fcf8e3;
+@def C_ALERT_WARNING_TEXT                           #8a6d3b;
+@def C_ALERT_WARNING_BORDER                         #faebcc;
+@def C_ALERT_DANGER_BG                              #f2dede;
+@def C_ALERT_DANGER_TEXT                            #a94442;
+@def C_ALERT_DANGER_BORDER                          #ebccd1;
+/** Progress bars **/
+/** **/
+/** **/
+/**** Background color of the whole progress component **/
+@def C_PROGRESS_BG                                  #f5f5f5;
+/**** Progress bar text color **/
+@def C_PROGRESS_BAR_COLOR                           #fff;
+/**** Variable for setting rounded corners on progress bar. **/
+@def S_PROGRESS_BORDER_RADIUS                       4px;
+/**** Default progress bar color **/
+@def C_PROGRESS_BAR_BG                              #337ab7;
+/**** Success progress bar color **/
+@def C_PROGRESS_BAR_SUCCESS_BG                      #5cb85c;
+/**** Warning progress bar color **/
+@def C_PROGRESS_BAR_WARNING_BG                      #f0ad4e;
+/**** Danger progress bar color **/
+@def C_PROGRESS_BAR_DANGER_BG                       #d9534f;
+/**** Info progress bar color **/
+@def C_PROGRESS_BAR_INFO_BG                         #5bc0de;
+/** List group **/
+/** **/
+/** **/
+/**** Background color on `.list-group-item` **/
+@def C_LIST_GROUP_BG                                #fff;
+/**** `.list-group-item` border color **/
+@def C_LIST_GROUP_BORDER                            #ddd;
+/**** List group border radius **/
+@def S_LIST_GROUP_BORDER_RADIUS                     4px;
+/**** Background color of single list items on hover **/
+@def C_LIST_GROUP_HOVER_BG                          #f5f5f5;
+/**** Text color of active list items **/
+@def C_LIST_GROUP_ACTIVE_COLOR                      #fff;
+/**** Background color of active list items **/
+@def C_LIST_GROUP_ACTIVE_BG                         #337ab7;
+/**** Border color of active list elements **/
+@def C_LIST_GROUP_ACTIVE_BORDER                     #337ab7;
+/**** Text color for content within active list items **/
+@def C_LIST_GROUP_ACTIVE_TEXT_COLOR                 #c7ddef;
+/**** Text color of disabled list items **/
+@def C_LIST_GROUP_DISABLED_COLOR                    #777777;
+/**** Background color of disabled list items **/
+@def C_LIST_GROUP_DISABLED_BG                       #eeeeee;
+/**** Text color for content within disabled list items **/
+@def C_LIST_GROUP_DISABLED_TEXT_COLOR               #777777;
+@def C_LIST_GROUP_LINK_COLOR                        #555;
+@def C_LIST_GROUP_LINK_HOVER_COLOR                  #555;
+@def C_LIST_GROUP_LINK_HEADING_COLOR                #333;
+/** Panels **/
+/** **/
+/** **/
+@def C_PANEL_BG                                     #fff;
+@def S_PANEL_BODY_PADDING                           15px;
+@def S_PANEL_HEADING_PADDING                        10px 15px;
+@def S_PANEL_FOOTER_PADDING                         10px 15px;
+@def S_PANEL_BORDER_RADIUS                          4px;
+/**** Border color for elements within panels **/
+@def C_PANEL_INNER_BORDER                           #ddd;
+@def C_PANEL_FOOTER_BG                              #f5f5f5;
+@def C_PANEL_DEFAULT_TEXT                           #333333;
+@def C_PANEL_DEFAULT_BORDER                         #ddd;
+@def C_PANEL_DEFAULT_HEADING_BG                     #f5f5f5;
+@def C_PANEL_PRIMARY_TEXT                           #fff;
+@def C_PANEL_PRIMARY_BORDER                         #337ab7;
+@def C_PANEL_PRIMARY_HEADING_BG                     #337ab7;
+@def C_PANEL_SUCCESS_TEXT                           #3c763d;
+@def C_PANEL_SUCCESS_BORDER                         #d6e9c6;
+@def C_PANEL_SUCCESS_HEADING_BG                     #dff0d8;
+@def C_PANEL_INFO_TEXT                              #31708f;
+@def C_PANEL_INFO_BORDER                            #bce8f1;
+@def C_PANEL_INFO_HEADING_BG                        #d9edf7;
+@def C_PANEL_WARNING_TEXT                           #8a6d3b;
+@def C_PANEL_WARNING_BORDER                         #faebcc;
+@def C_PANEL_WARNING_HEADING_BG                     #fcf8e3;
+@def C_PANEL_DANGER_TEXT                            #a94442;
+@def C_PANEL_DANGER_BORDER                          #ebccd1;
+@def C_PANEL_DANGER_HEADING_BG                      #f2dede;
+@def C_PANEL_INVERSE_TEXT                           #fff;
+@def C_PANEL_INVERSE_BORDER                         #000000;
+@def C_PANEL_INVERSE_HEADING_BG                     #000;
+/** Thumbnails **/
+/** **/
+/** **/
+/**** Padding around the thumbnail image **/
+@def S_THUMBNAIL_PADDING                            4px;
+/**** Thumbnail background color **/
+@def C_THUMBNAIL_BG                                 #fff;
+/**** Thumbnail border color **/
+@def C_THUMBNAIL_BORDER                             #ddd;
+/**** Thumbnail border radius **/
+@def S_THUMBNAIL_BORDER_RADIUS                      4px;
+/**** Custom text color for thumbnail captions **/
+@def C_THUMBNAIL_CAPTION_COLOR                      #333333;
+/**** Padding around the thumbnail caption **/
+@def S_THUMBNAIL_CAPTION_PADDING                    9px;
+/** Wells **/
+/** **/
+/** **/
+@def C_WELL_BG                                      #f5f5f5;
+@def C_WELL_BORDER                                  #e3e3e3;
+/** Badges **/
+/** **/
+/** **/
+@def C_BADGE_COLOR                                  #fff;
+/**** Linked badge text color on hover **/
+@def C_BADGE_LINK_HOVER_COLOR                       #fff;
+@def C_BADGE_BG                                     #777777;
+/**** Badge text color in active nav link **/
+@def C_BADGE_ACTIVE_COLOR                           #337ab7;
+/**** Badge background color in active nav link **/
+@def C_BADGE_ACTIVE_BG                              #fff;
+@def BADGE_FONT_WEIGHT                              bold;
+@def BADGE_LINE_HEIGHT                              1;
+@def S_BADGE_BORDER_RADIUS                          10px;
+/** Breadcrumbs **/
+/** **/
+/** **/
+@def S_BREADCRUMB_PADDING_VERTICAL                  8px;
+@def S_BREADCRUMB_PADDING_HORIZONTAL                15px;
+/**** Breadcrumb background color **/
+@def C_BREADCRUMB_BG                                #f5f5f5;
+/**** Breadcrumb text color **/
+@def C_BREADCRUMB_COLOR                             #ccc;
+/**** Text color of current page in the breadcrumb **/
+@def C_BREADCRUMB_ACTIVE_COLOR                      #777777;
+/**** Textual separator for between breadcrumb elements **/
+@def BREADCRUMB_SEPARATOR                           "/";
+/** Carousel **/
+/** **/
+/** **/
+@def C_CAROUSEL_TEXT_SHADOW                         0 1px 2px rgba(0, 0, 0, 0.6);
+@def C_CAROUSEL_CONTROL_COLOR                       #fff;
+@def S_CAROUSEL_CONTROL_WIDTH                       15%;
+@def CAROUSEL_CONTROL_OPACITY                       0.5;
+@def S_CAROUSEL_CONTROL_FONT_SIZE                   20px;
+@def C_CAROUSEL_INDICATOR_ACTIVE_BG                 #fff;
+@def C_CAROUSEL_INDICATOR_BORDER_COLOR              #fff;
+@def C_CAROUSEL_CAPTION_COLOR                       #fff;
+/** Close **/
+/** **/
+/** **/
+@def CLOSE_FONT_WEIGHT                              bold;
+@def C_CLOSE_COLOR                                  #000;
+@def C_CLOSE_TEXT_SHADOW                            0 1px 0 #fff;
+/** Code **/
+/** **/
+/** **/
+@def C_CODE_COLOR                                   #c7254e;
+@def C_CODE_BG                                      #f9f2f4;
+@def C_KBD_COLOR                                    #fff;
+@def C_KBD_BG                                       #333;
+@def C_PRE_BG                                       #f5f5f5;
+@def C_PRE_COLOR                                    #333333;
+@def C_PRE_BORDER_COLOR                             #ccc;
+@def S_PRE_SCROLLABLE_MAX_HEIGHT                    340px;
+/** Type **/
+/** **/
+/** **/
+/**** Horizontal offset for forms and lists. **/
+@def S_COMPONENT_OFFSET_HORIZONTAL                  180px;
+/**** Text muted color **/
+@def C_TEXT_MUTED                                   #777777;
+/**** Abbreviations and acronyms border color **/
+@def C_ABBR_BORDER_COLOR                            #777777;
+/**** Headings small color **/
+@def C_HEADINGS_SMALL_COLOR                         #777777;
+/**** Blockquote small color **/
+@def C_BLOCKQUOTE_SMALL_COLOR                       #777777;
+/**** Blockquote font size **/
+@def S_BLOCKQUOTE_FONT_SIZE                         17.5px;
+/**** Blockquote border color **/
+@def C_BLOCKQUOTE_BORDER_COLOR                      #eeeeee;
+/**** Page header border color **/
+@def C_PAGE_HEADER_BORDER_COLOR                     #eeeeee;
+/**** Width of horizontal description list titles **/
+@def S_DL_HORIZONTAL_OFFSET                         180px;
+/**** Point at which .dl-horizontal becomes horizontal **/
+@def S_DL_HORIZONTAL_BREAKPOINT                     768px;
+/**** Horizontal line color. **/
+@def C_HR_BORDER                                    #eeeeee;
+@def C_DARKEN_JUMBOTRON_BG_10PCT                    #d5d5d5;
+@def C_DARKEN_NAVBAR_INVERSE_BG_7PCT                #101010;
+@def C_DARKEN_POPOVER_TITLE_BG_5PCT                 #ebebeb;
