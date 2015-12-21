@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         clean:{
-            dist: ['dist'],
+            dist: ['.work', 'dist'],
             bower: ['bower_components']
         },
 
@@ -27,7 +27,7 @@ module.exports = function (grunt) {
             },
             runtime: {
                 src: 'node_modules',
-                dest: 'bower_components/bootstrap/node_modules'
+                dest: '.work/bootstrap/node_modules'
             }
         },
 
@@ -36,21 +36,30 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
+                        cwd:'bower_components/',
+                        src: [
+                            'font-awesome/less/**/*',
+                            'bootstrap/{,grunt,less,js}/**/{,*}.{bower*,less,js,json,yml,jshintrc,css*}'
+                        ],
+                        dest: '.work/'
+                    },
+                    {
+                        expand: true,
                         cwd:'less/',
                         src: ['font-awesome/**/*', 'bootstrap/**/*'],
-                        dest: 'bower_components/'
+                        dest: '.work/'
                     },
                     {
                         expand: true,
                         cwd:'less/',
                         src: ['extra-theme.less'],
-                        dest: 'bower_components/bootstrap/less/'
+                        dest: '.work/bootstrap/less/'
                     }
                 ]
             },
             bootstrapDist:{
                 files:[
-                    {expand: true, cwd:'bower_components/bootstrap/dist/', src:'css/bootstrap.*', dest: 'dist/'}
+                    {expand: true, cwd:'.work/bootstrap/dist/', src:'css/bootstrap.*', dest: 'dist/'}
                 ]
             },
             fonts: {
@@ -69,7 +78,7 @@ module.exports = function (grunt) {
                     sourceMapURL: 'font-awesome.css.map',
                     sourceMapFilename: 'dist/css/font-awesome.css.map'
                 },
-                src: 'bower_components/font-awesome/less/font-awesome.less',
+                src: '.work/font-awesome/less/font-awesome.less',
                 dest: 'dist/css/font-awesome.css'
             },
             gss: {
@@ -199,7 +208,7 @@ module.exports = function (grunt) {
             grunt: true,
             args: ['clean:dist', 'dist-css'],
             opts: {
-                cwd: 'bower_components/bootstrap'
+                cwd: '.work/bootstrap'
             }
         }, function (err, result, code) {
             console.log(result.stdout);
@@ -218,7 +227,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('gss', ['less:gss', 'to-gss-vars']);
 
-    grunt.registerTask('bower-reset', ['clean:bower', 'bower-install']);
+    grunt.registerTask('install', ['clean:bower', 'bower-install']);
 
     grunt.registerTask('compile-bootstrap', ['symlink:runtime', 'grunt-bootstrap', 'copy:bootstrapDist']);
 
@@ -226,7 +235,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('dist', ['copy:work', 'compile-bootstrap', 'compile-fa']);
 
-    grunt.registerTask('default', ['bower-reset', 'clean:dist', 'dist', 'gss']);
+    grunt.registerTask('default', ['clean:dist', 'dist', 'gss']);
 
 
 };
