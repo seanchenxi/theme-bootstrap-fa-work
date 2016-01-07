@@ -3,3 +3,33 @@
 .panel-inverse {
   .panel-variant(@panel-inverse-border; @panel-inverse-text; @panel-inverse-heading-bg; @panel-inverse-border);
 }
+
+.gwt-Button:extend(.btn){
+  &:active:extend(.btn:active){}
+  &.active:extend(.btn.active){}
+  &:hover:extend(.btn:hover){}
+  &.hover:extend(.btn.hover){}
+  &:focus:extend(.btn:focus){}
+  &.focus:extend(.btn.focus){}
+  &[disabled]:extend(.btn[disabled]){}
+  &.disabled:extend(.btn.disabled){}
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+}
+
+
+.gwt-PopupPanelGlass{
+  background-color: #fff;
+  .opacity(@modal-backdrop-opacity);
+  z-index: @zindex-modal;
+}
+
+.gwt-PopupPanel:extend(.modal-content){
+  z-index: (@zindex-modal + 10);
+}
+
+.alert.pop{
+  padding: @alert-padding (@alert-padding * 2.5);
+  border: 0 none;
+  .box-shadow(0 3px 6px rgba(0,0,0,.325));
+  z-index: (@zindex-modal + 10);
+}

@@ -183,7 +183,7 @@ module.exports = function (grunt) {
 
             result.forEach(function (item, index) {
                 if(index < 1){
-                    fs.appendFileSync(targetFile, "@provide 'variables';\n");
+                    fs.appendFileSync(targetFile, "@provide 'theme-variables';\n");
                 }
                 if(item.indexOf("/**") < 0){
                     var nbSpace = maxLength - item.split(":")[0].length;
