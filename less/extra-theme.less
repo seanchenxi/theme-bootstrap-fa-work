@@ -7,7 +7,7 @@
 @font-bold-extra: 700;
 
 html, body {
-  font-weight: F_WEIGHT;
+  font-weight: @font-normal;
 }
 
 ul, ol{
@@ -52,3 +52,45 @@ ul, ol{
 @import "gwt-DatePicker";
 @import "gwt-StackLayoutPanel";
 @import "extra-utilities";
+
+/** Begin of adaptation with Google Fonts **/
+
+::-webkit-input-placeholder {
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+:-ms-input-placeholder {
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+.form-control,
+.btn,
+.gwt-button{
+  padding-top: 8px;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-top: 1px;
+}
+
+.panel .panel-heading{
+  padding-top: 12px;
+}
+
+/** End of adaptation with Google Fonts **/
+
