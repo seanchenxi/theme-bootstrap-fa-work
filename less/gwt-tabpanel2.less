@@ -1,0 +1,55 @@
+.gwt-TabBar {
+
+  border-bottom: 1px solid @nav-tabs-border-color;
+
+  .gwt-TabBarRest-wrapper,
+  .gwt-TabBarItem-wrapper{
+    outline: 0 none;
+  }
+
+  .gwt-TabBarFirst {
+    display: none;
+  }
+
+  .gwt-TabBarRest {
+  }
+
+  .gwt-TabBarItem {
+    margin-bottom: -1px;
+    outline: 0 none;
+    cursor: pointer;
+
+    > .gwt-HTML,
+    > .gwt-Label{
+      &:extend(.nav>li>a);
+      &:extend(.nav-tabs>li>a);
+    }
+  }
+
+  .gwt-TabBarItem:hover{
+    > .gwt-HTML,
+    > .gwt-Label{
+      &:extend(.nav-tabs>li.active > a);
+      color: @brand-primary;
+      cursor: pointer;
+      border-bottom-color: @nav-tabs-border-color;
+    }
+  }
+
+  .gwt-TabBarItem.gwt-TabBarItem-selected:hover,
+  .gwt-TabBarItem-selected {
+    > .gwt-HTML,
+    > .gwt-Label{
+      &:extend(.nav-tabs>li.active > a);
+      color: @brand-primary;
+    }
+  }
+
+}
+
+.gwt-TabPanel {
+}
+
+.gwt-TabPanelBottom {
+  padding-top: 12px;
+}

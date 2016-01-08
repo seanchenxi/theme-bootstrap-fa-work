@@ -1,0 +1,200 @@
+.gwt-DatePicker,
+.datePickerMonthSelector,
+.datePickerDays {
+  width: 100%;
+
+  td {
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &,&:focus{
+      outline: 0 none;
+    }
+  }
+}
+
+.gwt-DatePicker {
+  width: auto;
+  cursor: default;
+  background-color: #fff;
+}
+
+.datePickerDay,
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+  text-align: center;
+  padding: 6px;
+  outline: 0 none;
+  font-weight: 600;
+  border-right: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+  padding: 0 4px 2px;
+  cursor: default;
+  color: @gray-light;
+  font-weight: 400;
+}
+
+.datePickerDay {
+  padding: 4px 7px;
+  cursor: pointer;
+}
+
+.datePickerDayIsWeekend {
+  background: @gray-lighter;
+}
+
+.datePickerDayIsFiller {
+  color: #999;
+  font-weight:normal;
+}
+
+.datePickerDayIsValue {
+  background-color: @brand-primary;
+  color: #FFF;
+}
+
+.datePickerDayIsDisabled {
+  cursor: default;
+  color: @gray-light;
+  font-style: italic;
+}
+
+.datePickerDayIsHighlighted {
+  background-color: @brand-warning;
+  color: #fff;
+}
+
+.datePickerDayIsValueAndHighlighted {
+  background-color: darken(@brand-primary, 15%);
+}
+
+.datePickerDayIsToday {
+  color: @brand-primary;
+}
+
+.datePickerPreviousButton,
+.datePickerNextButton {
+  font-size: 1.3em;
+  line-height: 1;
+  color: @link-color;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px;
+  outline: 0 none;
+
+  &:hover{
+    color: @link-hover-color;
+  }
+}
+
+td.datePickerMonth {
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 600;
+  padding-top: 2px;
+}
+
+.gwt-DateBox {
+  &:extend(.form-control);
+}
+
+.dateBoxFormatError {
+  background: #ffcccc;
+}
+
+.dateBoxPopup {
+  z-index: @zindex-dropdown;
+  padding: 0;
+  margin: 1px 0;
+  font-size: @font-size-base;
+  text-align: center;
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-fallback-border; // IE8 fallback
+  border: 1px solid @dropdown-border;
+  border-radius: @border-radius-base;
+  .box-shadow(0 6px 12px rgba(0,0,0,.175));
+  background-clip: padding-box;
+}
+
+.dateBoxPopup .gwt-DatePicker{
+  background-color: transparent;
+  border-radius: @border-radius-base;
+}
+
+  /** monthYearOnlyDatePicker **/
+
+.monthYearOnlyDatePickerYearSelector{
+  &:extend(.datePickerMonthSelector);
+
+  td{
+    &:extend(.datePickerMonthSelector td);
+
+    &:focus{
+      &:extend(.datePickerMonthSelector td:focus);
+    }
+  }
+}
+
+.monthYearOnlyDatePickerNextYearButton{
+  &:extend(.datePickerNextButton);
+  &:hover{
+    &:extend(.datePickerNextButton:hover);
+  }
+}
+
+.monthYearOnlyDatePickerPreviousYearButton{
+  &:extend(.datePickerPreviousButton);
+  &:hover{
+    &:extend(.datePickerPreviousButton:hover);
+  }
+}
+
+.monthYearOnlyDatePickerMonths {
+  &:extend(.datePickerDays);
+}
+
+.monthYearOnlyDatePickerMonth {
+  text-align: center;
+  padding: 4px;
+  outline: 0 none;
+  font-weight: 500;
+}
+
+.monthYearOnlyDatePickerMonth {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.monthYearOnlyDatePickerMonthIsValue {
+  &:extend(.datePickerDayIsValue);
+  border-radius: @border-radius-base;
+}
+
+.monthYearOnlyDatePickerMonthIsDisabled {
+  &:extend(.datePickerDayIsDisabled);
+}
+
+.monthYearOnlyDatePickerMonthIsHighlighted {
+  &:extend(.datePickerDayIsHighlighted);
+  border-radius: @border-radius-base;
+}
+
+.monthYearOnlyDatePickerMonthIsValueAndHighlighted {
+  &:extend(.datePickerDayIsValueAndHighlighted);
+}
+
+td.monthYearOnlyDatePickerYear {
+  &:extend(td.datePickerMonth);
+}
+
+table.monthYearOnlyDatePickerMonths tr:first-child{
+  visibility: hidden;
+  display: none;
+}

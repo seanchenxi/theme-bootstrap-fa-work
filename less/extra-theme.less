@@ -1,5 +1,19 @@
 /*! extra theme */
 
+@font-light: 300;
+@font-normal: 400;
+@font-bold: 500;
+@font-bolder: 600;
+@font-bold-extra: 700;
+
+html, body {
+  font-weight: F_WEIGHT;
+}
+
+ul, ol{
+  list-style: none;
+}
+
 .panel-inverse {
   .panel-variant(@panel-inverse-border; @panel-inverse-text; @panel-inverse-heading-bg; @panel-inverse-border);
 }
@@ -33,3 +47,8 @@
   .box-shadow(0 3px 6px rgba(0,0,0,.325));
   z-index: (@zindex-modal + 10);
 }
+
+@import "gwt-TabPanel";
+@import "gwt-DatePicker";
+@import "gwt-StackLayoutPanel";
+@import "extra-utilities";
