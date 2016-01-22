@@ -1,0 +1,120 @@
+.gwt-MenuBar {
+  cursor: default;
+
+  .gwt-MenuItem {
+    cursor: default;
+  }
+
+  .gwt-MenuItem-selected {
+    &:extend(.dropdown-menu > .active > a);
+  }
+
+  .gwt-MenuItem-disabled {
+    &:extend(.dropdown-menu > .disabled > a);
+  }
+}
+
+.gwt-MenuBar-horizontal {
+  border: 1px solid @navbar-default-border;
+
+  .gwt-MenuItem {
+    padding-top:    @navbar-padding-vertical;
+    padding-bottom: @navbar-padding-vertical;
+    line-height: @line-height-computed;
+  }
+
+  .gwt-MenuItemSeparator {
+    width: 1px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-left: 1px solid #888888;
+    background: white;
+  }
+
+  .gwt-MenuItemSeparator .menuSeparatorInner {
+    width: 1px;
+    height: 1px;
+    background: white;
+  }
+}
+
+.gwt-MenuBar-vertical {
+  margin-top: 0;
+  margin-left: 0;
+  background: #fff;
+
+  table {
+    border-collapse: collapse;
+  }
+
+  .gwt-MenuItem {
+    padding: 3px 16px;
+  }
+
+  .gwt-MenuItemSeparator {
+    padding: 2px 0;
+  }
+
+  .gwt-MenuItemSeparator .menuSeparatorInner {
+    height: 1px;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #777777;
+    background: #ddddee;
+    overflow: hidden;
+  }
+
+  .subMenuIcon {
+    padding-right: 4px;
+  }
+
+  .subMenuIcon-selected {
+    &:extend(.dropdown-menu > .active > a);
+  }
+}
+
+.gwt-MenuBarPopup {
+  z-index: @zindex-dropdown;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0;
+  list-style: none;
+  font-size: @font-size-base;
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-fallback-border; // IE8 fallback
+  border: 1px solid @dropdown-border;
+  border-radius: @border-radius-base;
+  .box-shadow(0 6px 12px rgba(0, 0, 0, .175));
+  background-clip: padding-box;
+
+  table{
+    width: 100%;
+  }
+
+  .menuPopupTopCenter,
+  .menuPopupBottomCenter,
+  .menuPopupMiddleLeft,
+  .menuPopupMiddleRight,
+  .menuPopupTopLeftInner,
+  .menuPopupTopRightInner,
+  .menuPopupBottomLeftInner,
+  .menuPopupBottomRightInner,
+  .menuPopupTopLeft,
+  .menuPopupTopRight,
+  .menuPopupBottomLeft,
+  .menuPopupBottomRight {
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 0 none;
+    outline: 0 none;
+  }
+}
+
+
+.menuPopupContent .gwt-MenuBar-vertical{
+  background-color: transparent;
+}
